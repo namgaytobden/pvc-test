@@ -8,12 +8,12 @@ spec:
     matchLabels:
       app: test
   template:
-    metadata:
-      labels:
-        app: test
-    spec:
-      containers:
-       - name: pvc-test
-         image: <IMAGE>
-         ports:
-          - containerPort: 80
+      metadata:
+        labels:
+          app: test
+      spec:
+        containers:
+          - name: pvc-test
+            image: <IMAGE>
+            ports:
+              - containerPort: 80
