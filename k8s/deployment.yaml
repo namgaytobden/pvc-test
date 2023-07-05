@@ -11,16 +11,9 @@ spec:
     metadata:
       labels:
         app: test
-
-    volumes:
-      - name: dataVolume
-        mountPath: /app
     spec:
       containers:
        - name: pvc-test
          image: <IMAGE>
          ports:
           - containerPort: 80
-      volumeMounts:
-       - name: vol
-         mountPath: /app
