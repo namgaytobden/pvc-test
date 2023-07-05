@@ -20,4 +20,4 @@ spec:
   tls:
     - hosts:
       - nttets.selise.dev
-      secrectName: nttets.selise.dev
+      secretName: nttets.selise.dev
