@@ -36,5 +36,5 @@ jobs:
                kubectl --kubeconfig=.kube/config apply -f k8s/deployment.yaml
                kubectl --kubeconfig=.kube/config apply -f k8s/service.yaml
                kubectl --kubeconfig=.kube/config apply -f k8s/ingress.yaml
-               kubectl --kubeconfig=.kube/config apply -f k8s/pv.yaml
-               kubectl --kubeconfig=.kube/config apply -f k8s/pvc.yaml
+              # kubectl --kubeconfig=.kube/config apply -f k8s/pv.yaml
+              # kubectl --kubeconfig=.kube/config apply -f k8s/pvc.yaml
