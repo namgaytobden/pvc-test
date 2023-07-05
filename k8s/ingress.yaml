@@ -19,5 +19,5 @@ spec:
               number: 80
   tls:
     - hosts:
-        - nttets.selise.dev
+      - nttets.selise.dev
       secrectName: nttets.selise.dev
