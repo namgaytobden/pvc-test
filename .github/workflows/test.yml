@@ -29,7 +29,7 @@ jobs:
             kube-config: ${{ secrets.KUBE_CONFIG }}
 
       - name: Image Manifest
-        run: sed -i 's|<IMAGE>|${{ vars.DOCKER_REPO }}:${{ github.sha }}' k8s/deployment.yaml
+        run: sed -i 's|<IMAGE>|${{ vars.DOCKER_REPO }}:${{ github.sha }}|' k8s/deployment.yaml
 
       - name: Create Resources
         run: |
