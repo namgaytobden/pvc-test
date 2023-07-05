@@ -2,10 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: pvc-test
-  annotations:
-    cert-manager.io/cluster-issuer: http01-cluster-issuer
+
 spec:
-  ingressClassName: nginx
   rules:
   - host: nttets.selise.dev
     http:
@@ -20,4 +18,4 @@ spec:
   tls:
     - hosts:
       - nttets.selise.dev
-      secretName: nttets.selise.dev
+      secretName: secret-tls
