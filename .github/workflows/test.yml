@@ -35,4 +35,5 @@ jobs:
         run: |
                kubectl --kubeconfig=.kube/config apply -f k8s/deployment.yaml
                kubectl --kubeconfig=.kube/config apply -f k8s/service.yaml
+               kubectl --kubeconfig=.kube/config apply -f k8s/issuer.yaml
                kubectl --kubeconfig=.kube/config apply -f k8s/ingress.yaml
