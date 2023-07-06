@@ -20,7 +20,7 @@ spec:
             volumeMounts:
               - name: data-volume
                 mountPath: /app
-
+                
         volumes:
          - name: data-volume
            persistentVolumeClaim:

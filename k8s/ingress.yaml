@@ -21,3 +21,4 @@ spec:
     - hosts:
       - nttets.selise.dev
       secretName: secret-tls
+      
