@@ -25,3 +25,4 @@ spec:
          - name: data-volume
            persistentVolumeClaim:
             claimName: pvc
+         
