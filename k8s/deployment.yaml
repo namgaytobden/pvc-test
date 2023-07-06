@@ -17,11 +17,10 @@ spec:
             image: <IMAGE>
             ports:
               - containerPort: 80
-#            volumeMounts:
-#             - name: data-volume
-#                mountPath: /app
+            volumeMounts:
+              - name: data-volume
+                mountPath: /app
 
-#  volumes:
-#    - name: data-volume
-#      hostPath:
-#      path: /data
+        volumes:
+         - name: data-volume
+           emptyDir: {}
