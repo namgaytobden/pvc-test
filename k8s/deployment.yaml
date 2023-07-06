@@ -23,4 +23,5 @@ spec:
 
         volumes:
          - name: data-volume
-           emptyDir: {}
+           persistentVolumeClaim:
+            claimName: pvc
